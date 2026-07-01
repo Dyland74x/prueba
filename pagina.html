@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Simple</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .emoji {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 20px 0 30px;
+        }
+
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #aaa;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="emoji">🌐</span>
+        <h1>¡Bienvenido!</h1>
+        <p>
+            Esta es una página web sencilla creada con HTML y CSS. 
+            Puedes personalizarla fácilmente cambiando colores, textos o agregando más secciones.
+        </p>
+        <button class="btn" onclick="mostrarMensaje()">Haz clic aquí</button>
+        <footer>
+            Hecho con ❤️ para ti
+        </footer>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            alert('¡Gracias por hacer clic! 🎉');
+        }
+    </script>
+</body>
+</html>
